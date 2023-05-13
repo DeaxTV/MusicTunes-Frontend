@@ -1,0 +1,1 @@
+class o{static toBase64(t){return btoa(t)}static fromBase64(t){return atob(t)}}const r=async({url:a})=>{const t=o.fromBase64(decodeURIComponent(a.searchParams.get("token")));try{const{clientId:e,displayName:s}=JSON.parse(t);return{hostId:e,hostDisplayName:s,url:a.pathname+`?${a.searchParams.toString()}`}}catch(e){throw e(500,e)}};export{r as load};

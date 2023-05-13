@@ -1,0 +1,1 @@
+import{e}from"../../../chunks/index2.js";const p=async({fetch:t,url:a,parent:r})=>{const o=await t("/explore.json?browseId=FEmusic_moods_and_genres"),s=await o.json();if(!o.ok)throw e(500,o.statusText);return{response:s,path:a.pathname}};export{p as load};

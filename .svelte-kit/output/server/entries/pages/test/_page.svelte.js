@@ -1,0 +1,5 @@
+import{c as e,v as t,h as r}from"../../../chunks/index.js";import"../../../chunks/utils.js";import{B as a}from"../../../chunks/Button.js";const o={code:'.TEST.svelte-8fkjgd{border:1px solid hsla(0,0%,100%,.5);overflow:hidden;position:relative}.TEST.svelte-8fkjgd:before{background-clip:padding-box;background-size:0;background:hsla(0,0%,100%,.2) radial-gradient(circle,hsla(0,0%,100%,.2) 1%,transparent 0) 50%/15000%;content:"";inset:0;opacity:var(--progress);position:absolute;transform:scale(var(--progress));transition:background .4s cubic-bezier(0,.55,.45,1) .2s,transform .4s cubic-bezier(0,.55,.45,1) .2s,opacity .8s cubic-bezier(0,.55,.45,1) .2s;transition-delay:0ms;transition-duration:.5s}.TEST.svelte-8fkjgd:active:before{background-color:hsla(0,0%,100%,.2);background-size:150%;transition-delay:0ms;transition:.4s cubic-bezier(.55,0,1,.45);transition-property:transform,opacity,background}',map:null};let i="--progress: 0";const g=e((s,n,c,d)=>(s.css.add(o),`<main>${t(a,"Button").$$render(s,{},{},{default:()=>"Wow"})}
+	<div class="TEST svelte-8fkjgd"${r("style",i,0)}><h1>TEST CONTENT</h1>
+		</div></main>
+
+`));export{g as default};

@@ -1,0 +1,1 @@
+const c=async({url:s,fetch:n})=>{const e=s.pathname,a=s.searchParams.get("id")||"",o=s.searchParams.get("type")||"",t=await n(`/api/v1/main.json?q=&endpoint=browse${a?`&browseId=${a}`:""}${o?`&pt=${o}`:""}`),r=await t.json();return t.ok?{data:r,id:a,path:e}:{status:t.status,msg:t.body}};export{c as load};

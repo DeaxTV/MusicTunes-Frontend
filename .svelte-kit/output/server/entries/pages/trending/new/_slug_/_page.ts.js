@@ -1,0 +1,1 @@
+const r=async({params:t,fetch:e,url:a})=>{const s=await e(`/trending/new/${t.slug}.json${a.searchParams.get("params")?`?params=${a.searchParams.get("params")}`:""}${a.searchParams.get("itct")?`&itct=${encodeURIComponent(a.searchParams.get("itct"))}`:""}`),n=await s.json();if(s.ok)return n};export{r as load};

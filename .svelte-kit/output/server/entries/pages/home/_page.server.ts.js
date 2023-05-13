@@ -1,0 +1,1 @@
+import{e as c}from"../../../chunks/index2.js";const m=async({fetch:t,data:d,url:o})=>{const a=await t("/home.json"),r=await a.json();if(!a.ok)throw c(500,`Error: ${a.statusText}`);const{carousels:s,headerThumbnail:n=void 0,continuations:e,visitorData:i}=r;return{carousels:s,headerThumbnail:n,continuations:e,visitorData:i,path:o.pathname}};export{m as load};

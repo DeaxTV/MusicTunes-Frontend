@@ -1,0 +1,1 @@
+const l=async({url:t,params:a,fetch:e})=>{const s=await e(`/explore/${a.slug}.json`),{sections:n,data:o,header:p,type:r}=await s.json();let c=t.pathname;return{sections:n,header:p,data:o,type:r,path:c}};export{l as load};

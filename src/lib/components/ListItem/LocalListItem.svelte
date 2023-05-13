@@ -99,7 +99,7 @@
 				if (item.endpoint?.pageType?.includes("MUSIC_PAGE_TYPE_ARTIST")) {
 					shareData = {
 						title: item.title,
-						text: `${item.title} on Beatbump`,
+						text: `${item.title} on MusicTunes`,
 						url: `${$SITE_ORIGIN_URL}/artist/${item.endpoint?.browseId}`,
 					};
 				}

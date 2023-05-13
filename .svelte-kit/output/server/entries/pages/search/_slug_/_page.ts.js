@@ -1,0 +1,1 @@
+const l=async({url:e,params:n,fetch:t})=>{const a=n.slug,s=e.searchParams.get("filter")||"",c=`/api/v1/search.json?q=${a}${s!==""?`&filter=${encodeURIComponent(s)}`:""}`,o=await(await t(c)).json();return Object.assign(o,{filter:s}),console.log(o),o};export{l as load};

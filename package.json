@@ -1,10 +1,12 @@
 {
-	"name": "beatbump-app",
+	"name": "MusicTunes-app",
 	"version": "2.2.0",
 	"scripts": {
 		"dev": "npm run sync && vite dev --host",
-		"bb:build": "vite build",
+		"bb:build": "node ./scripts/build.cjs build",
 		"cfw:deploy": "wrangler publish",
+		"vercel:deploy": "vercel deploy --prod",
+		"netlify:deploy": "netlify deploy --prod",
 		"preview": "vite preview --host",
 		"build": "vite build",
 		"test": "playwright test",

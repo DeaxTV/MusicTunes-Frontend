@@ -60,7 +60,7 @@
 					height="32"
 					src="/logo.svg"
 					alt="logo"
-					title="Beatbump Home"
+					title="MusicTunes Home"
 				/>
 			</a>
 		{:else}
@@ -77,7 +77,7 @@
 					height="32"
 					src="/logo.svg"
 					alt="logo"
-					title="Beatbump Home"
+					title="MusicTunes Home"
 				/>
 			</a>
 		{/if}

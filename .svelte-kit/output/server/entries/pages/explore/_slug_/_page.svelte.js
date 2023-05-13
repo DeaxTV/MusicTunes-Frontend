@@ -1,0 +1,5 @@
+import{c as h,v as r,j as c,k as f}from"../../../../chunks/index.js";import{C as u}from"../../../../chunks/Carousel.js";import{G as y}from"../../../../chunks/GridItem.svelte_svelte_type_style_lang.js";import"../../../../chunks/stores.js";import"../../../../chunks/utils.js";import{H as v}from"../../../../chunks/Header.js";import{C}from"../../../../chunks/CarouselItem.js";const B=h((t,o,s,$)=>{let{data:e}=o,m=e?.sections,l=e?.path,i=e?.header,n=e?.type;return o.data===void 0&&s.data&&e!==void 0&&s.data(e),`${r(v,"Header").$$render(t,{title:i+" Playlists",url:l,desc:"Find the perfect playlist that'll match your mood, or fit any occasion."},{},{})}
+<main><div class="header"><h1>${c(i)}</h1></div>
+	${f(m,a=>`${n==="grid"?`${r(y,"Grid").$$render(t,{heading:a.title,items:a.section},{},{item:({item:d,index:p})=>`${r(C,"CarouselItem").$$render(t,{index:p,aspectRatio:d.aspectRatio,item:d,kind:"isPlaylist",type:"home",isBrowseEndpoint:!0,slot:"item"},{},{})}`})}`:`
+			${r(u,"Carousel").$$render(t,{header:a.header,items:a.results,type:"home",isBrowseEndpoint:!1},{},{})}`}`)}
+</main>`});export{B as default};
