@@ -2,8 +2,19 @@
 	"name": "beatbump-app",
 	"version": "2.2.0",
 	"scripts": {
+		"dev": "npm run sync && vite dev --host",
+		"bb:build": "vite build",
+		"cfw:deploy": "wrangler publish",
 		"start": "vite preview --host",
 		"build": "vite build",
+		"test": "playwright test",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"test:unit": "vitest",
+		"sync": "svelte-kit sync",
+		"validate": "npm run format && npm run lint ",
+		"format": "prettier --write .",
+		"lint": "prettier --check . && eslint ."
 	},
 	"devDependencies": {
 		"@babel/core": "^7.18.6",
